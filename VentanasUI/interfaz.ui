@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>532</width>
+    <height>632</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>532</width>
+    <height>632</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Punto de Venta</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #f4f3ee;
+}
+
+QLineEdit{
+	font: 18px tw-cent-mt #434343;
+	border:  0.5px solid gray;
+	border-radius: 4px;
+	background-color: white;
+	color: #434343;
+	
+}
+
+QLabel{
+ 	color: #434343;
+	font: bold 16px tw-cent-mt  #434343;
+}
+
+QPushButton{
+	font: bold 16px tw-cent-mt #434343;
+	border:  0.5px solid #f4f3ee;
+	border-radius: 5px;
+	color:white;
+}
+
+QTextEdit{
+	background-color: white;
+}
+
+QComboBox{
+	background-color: white
+}
+
+QSpinBox{
+		background-color: white
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="txtID">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbNames">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spCant">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>40</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cantidad:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdmin">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>592</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #32bea6;
+border-radius: 15px;</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/settings.png</normaloff>../icons/settings.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>26</width>
+      <height>26</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+T</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPaid">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>590</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #06d6a0;</string>
+    </property>
+    <property name="text">
+     <string>Pagar</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+P</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOff">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>tw-cent-mt #434343</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ff4764;
+border-radius: 15px</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/off.png</normaloff>../icons/off.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>95</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio: $</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbPrice">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>95</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #70d6ff;
+border-radius: 15px</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/search.png</normaloff>../icons/search.png</iconset>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="table">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>511</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;</string>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>600</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total: $</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTotal">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>600</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>130</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #2196f3;
+border-radius: 15px</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/plus.png</normaloff>../icons/plus.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>28</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRem">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>130</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ec1c24;
+border-radius: 15px</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/remove.png</normaloff>../icons/remove.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>28</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+R</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

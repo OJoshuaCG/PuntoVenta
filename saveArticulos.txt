@@ -1,0 +1,7 @@
+
+Tostadas,Tostadas de Maiz,20.00
+Jugo,Jugo de Naranja,15.0
+PanBlanco,Pan Blanco Mediano,25.0
+Chokis,Galletas Chokis,5.00
+CocaLight,Coca Cola Light,10.00
+Helado,HeladoFre,12.00

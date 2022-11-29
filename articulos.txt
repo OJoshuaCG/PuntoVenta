@@ -1,0 +1,7 @@
+Tostadas,Tostadas de Maiz,20.00
+Jugo,Jugo de Naranja,15.0
+PanBlanco,Pan Blanco Mediano,25.0
+Chokis,Galletas Chokis,5.00
+CocaLight,Coca Light,10.0
+Helado,Helado de Fresa,12.0
+AguaNat,Agua Natural 600ml.,9.00
